@@ -1,0 +1,30 @@
+body {
+    font-family: sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    text-align: center;
+}
+.container {
+    height: 523px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f9f9f9;
+}
+.item {
+    margin-top: 125px;
+    font-size: 16px;
+}
+.item__price {
+    margin-top: 22px; 
+    font-size: 18px;
+    font-weight: 700;
+}
+.item__buttons {
+   color: #23bac1;
+   text-transform: uppercase;
+   border: 1px solid #23bac1;
+   margin-bottom: 101px;
+   margin-top: 24px;
+   padding: 24px 76px;
+}

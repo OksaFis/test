@@ -1,0 +1,105 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif
+}
+.grid {
+    display: grid;
+    grid-template-areas: 'header1 header1 header2 header2' 
+                         'nav main1 main2 aside'
+                         'footer1 footer1 footer2 footer3';
+    min-height: 100vh;
+    grid-template-columns: 400px;
+    grid-template-rows: auto;
+}
+.header1 {
+    grid-area: header1;
+}
+.header2 {
+    grid-area: header2;
+    background-color: #f3f1ef;
+}
+.sub-header2-title {
+    padding-top: 130px;
+    padding-left: 57px;
+    padding-right: 366px;
+    color: #666666;
+    font-size: 21px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.sub-header2-descr {
+    padding-top: 33px;
+    padding-left: 55px;
+    width: 412px;
+    color: #666666;
+    font-size: 24px;    
+}
+.nav {
+    grid-area: nav;
+}
+.main1 {
+    grid-area: main1;
+}
+
+.main2 {
+    grid-area: main2;
+}
+.aside {
+    grid-area: aside;
+}
+.footer1 {
+    padding-top: 144px;
+    grid-area: footer1;
+    background-color: #3f729b;
+}
+.sub-footer1-title {
+    padding-left: 213px;
+    color: #f9f9f9;
+    font-size: 24px;
+    font-weight: 700;
+}
+.sub-footer1-descr {
+    padding-top: 33px;
+    padding-left: 209px;
+    width: 290px;
+    color: #f9f9f9;
+    font-size: 24px;
+}
+.sub-footer1-buttons {
+    text-transform: uppercase;
+    color: #f9f9f9;
+    text-align: center;
+    padding-top: 22px;
+    margin-top: 68px;
+    margin-bottom: 118px;
+    margin-left: 210px;
+    width: 280px;
+    height: 56px;
+    border-radius: 28px;
+    border: 2px solid #ffffff;
+}
+.footer2 {
+    grid-area: footer2;
+    align-self: stretch;
+}    
+.footer3 {
+    grid-area: footer3;
+    background-color: #3f729b;
+}
+
+@media screen and (max-width: 600px) {
+    .grid {
+        grid-template-areas: 'header1'
+                             'header2'
+                             'nav' 
+                             'main1'
+                             'main2'
+                             'aside'
+                             'footer1'
+                             'footer2'
+                             'footer3';
+grid-template-columns: 100%;
+grid-template-rows: 100%;
+    }
+}
